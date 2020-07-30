@@ -1,0 +1,172 @@
+/*======================= INFINITE PRODUCTS ===================*/
+/*========================================================*/
+
+.divienhancer-woocommerce-infinite-product-size-one {
+  width: 100%;
+}
+
+.divienhancer-woocommerce-infinite-product-size-two {
+  width: 50%;
+}
+
+.divienhancer-woocommerce-infinite-product-size-three {
+  width: 33.33%;
+}
+
+.divienhancer-woocommerce-infinite-product-size-four {
+  width: 25%;
+}
+
+.divienhancer-woocommerce-infinite-product-size-five {
+  width: 20%;
+}
+
+.divienhancer-woocommerce-infinite-product-size-six {
+  width: 16.6%;
+}
+
+
+
+.divienhancer-shop-infinite-image {
+  position: relative;
+}
+.divienhancer-shop-infinite-image img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.divienhancer-shop-infinite-badge {
+  position: absolute;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 2px;
+  left: 15px;
+  top: 15px;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  font-weight: 600;
+}
+
+.deshopinfinite-style1 .divienhancer-shop-infinite-content {
+  padding: 8% 5% 10%;
+}
+
+.divienhancer-shop-infinite-addtocart {
+padding: 8px 16px;
+display: inline-block;
+text-align: center;
+border-radius: 3px;
+}
+
+.divienhancer-shop-infinite-addtocart-wrapper {
+  width: 100%;
+  display: block;
+}
+
+div.divienhancer-infinite-product-load-wrapper {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 100px;
+    left: 50%;
+    bottom: -50px;
+    margin-left: -50px;
+    text-align: center;
+}
+
+/* divienhancer-infinite-product-load
+------------------------- */
+
+.divienhancer-infinite-product-load {
+  font-size: 20px;
+  position: relative;
+  width: 4em;
+  height: 1em;
+  margin: 10px auto;
+}
+
+.divienhancer-infinite-product-load__dot {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  background: #555;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.divienhancer-infinite-product-load__dot:nth-child(1),
+.divienhancer-infinite-product-load__dot:nth-child(2) {
+  left: 0;
+}
+.divienhancer-infinite-product-load__dot:nth-child(3) { left: 1.5em; }
+.divienhancer-infinite-product-load__dot:nth-child(4) { left: 3em; }
+
+@keyframes reveal {
+  from { transform: scale(0.001); }
+  to { transform: scale(1); }
+}
+
+@keyframes slide {
+  to { transform: translateX(1.5em) }
+}
+
+.divienhancer-infinite-product-load__dot:nth-child(1) {
+  animation-name: reveal;
+}
+
+.divienhancer-infinite-product-load__dot:nth-child(2),
+.divienhancer-infinite-product-load__dot:nth-child(3) {
+  animation-name: slide;
+}
+
+.divienhancer-infinite-product-load__dot:nth-child(4) {
+  animation-name: reveal;
+  animation-direction: reverse;
+}
+
+
+/*============= responsive ====================*/
+@media only screen and (max-width: 980px) {
+
+  .divienhancer-woocommerce-infinite-product-size-three {
+    width: 50%;
+  }
+
+  .divienhancer-woocommerce-infinite-product-size-four {
+    width: 50%;
+  }
+
+  .divienhancer-woocommerce-infinite-product-size-five {
+    width: 50%;
+  }
+
+  .divienhancer-woocommerce-infinite-product-size-six {
+    width: 50%;
+  }
+
+}
+
+
+@media only screen and (max-width: 760px) {
+  .divienhancer-woocommerce-infinite-product-size-three {
+    width: 100%;
+  }
+
+  .divienhancer-woocommerce-infinite-product-size-four {
+    width: 100%;
+  }
+
+  .divienhancer-woocommerce-infinite-product-size-five {
+    width: 100%;
+  }
+
+  .divienhancer-woocommerce-infinite-product-size-six {
+    width: 100%;
+  }
+}
